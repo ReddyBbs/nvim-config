@@ -7,6 +7,7 @@ require("conform").setup()
 require("mason-conform").setup()
 
 require("lspconfig").texlab.setup({})
+require("lspconfig").asm_lsp.setup({ filetypes = { "asm", "s", "vmasm" } })
 
 -- require("neo-tree").setup({
 --   event = "file_opened",
